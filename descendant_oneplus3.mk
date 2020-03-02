@@ -23,6 +23,13 @@ $(call inherit-product, device/oneplus/oneplus3/device.mk)
 # Inherit some common Descendant stuff.
 $(call inherit-product, vendor/descendant/config/common_full_phone.mk)
 
+# Descendant GApps
+PIXEL_SETUP_OVERLAY_TYPE := PIXELONE
+SUPPORTS_GOOGLE_ASSISTANT_EXTRA_RESOURCES := true
+SUPPORTS_GOOGLE_WALLS := true
+SUPPORTS_PIXEL_SETUP_OVERLAY := true
+TARGET_INCLUDE_STOCK_ARCORE := NO
+
 PRODUCT_NAME := descendant_oneplus3
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MANUFACTURER := OnePlus

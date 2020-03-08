@@ -24,6 +24,13 @@ $(call inherit-product, device/oneplus/oneplus3/device.mk)
 # Inherit from the custom ROM configuration.
 $(call inherit-product, vendor/custom/config/common.mk)
 $(call inherit-product, vendor/custom/config/gsm.mk)
+$(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
+
+# GApps
+TARGET_PIXEL_SETUP_OVERLAY_TYPEL := P1
+TARGET_SUPPORTS_GOOGLE_ASSISTANT_EXTRA_RESOURCES := true
+TARGET_SUPPORTS_GOOGLE_WALLS := true
+TARGET_SUPPORTS_PIXEL_SETUP_OVERLAYS := true
 
 PRODUCT_NAME := prism_oneplus3
 PRODUCT_DEVICE := oneplus3

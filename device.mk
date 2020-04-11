@@ -155,6 +155,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth.a2dp@1.0-impl \
+    libbluetooth_audio_session \
     vendor.qti.hardware.bluetooth_audio@2.0
 
 # Additional native libraries
@@ -168,6 +170,14 @@ PRODUCT_PACKAGES += \
     libantradio
 
 # Bluetooth
+PRODUCT_PACKAGES += \
+    BluetoothExt \
+    libbluetooth_qti \
+    libbtconfigstore \
+    vendor.qti.hardware.bluetooth_dun-V1.0-java \
+    vendor.qti.hardware.bluetooth_dun@1.0 \
+    vendor.qti.hardware.btconfigstore@1.0
+
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=rome
 

@@ -178,6 +178,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_dun@1.0 \
     vendor.qti.hardware.btconfigstore@1.0
 
+# BT DEBUG
+PRODUCT_PACKAGES += \
+    bt_logger \
+    libbt-logClient
+
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=rome
 
